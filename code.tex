@@ -1,0 +1,21 @@
+% !TEX root = thesis.tex
+% Die obere Zeile teilt der LaTeX-IDE mit, welche Datei die Hauptdatei des Dokumentes ist! Diese erste Zeile nicht löschen!!!
+
+\chapter{Codelistings}
+
+\vspace{6mm}
+\begin{lstlisting}[caption=DNS Auflösung von cs.hm.edu, label=lst:labeldescodes]
+#! /home/basti/env/bin/python3
+
+from scapy.all import *
+from scapy.layers.inet import IP, UDP
+import threading
+import os
+import logging
+import ipaddress
+import json
+
+class MyNewClass():
+	def umlaut(instr):
+		return translate(instr, maketrans('aou_AOUs'))
+\end{lstlisting}

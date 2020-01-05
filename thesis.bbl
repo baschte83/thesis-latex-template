@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{guttich_intrusion-detection_2018}{online}{}
+      \name{author}{2}{}{%
+        {{hash=d631309e9643063bb6e42ebaa7cfb60b}{%
+           family={Güttich},
+           familyi={G\bibinitperiod},
+           given={Dr.\bibnamedelimi Götz},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=98996264fdc77eda4ab19d7db553b204}{%
+           family={Schmitz},
+           familyi={S\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d721ec56be54a08e4e2503c2669e50a}
+      \strng{fullhash}{4d721ec56be54a08e4e2503c2669e50a}
+      \strng{bibnamehash}{4d721ec56be54a08e4e2503c2669e50a}
+      \strng{authorbibnamehash}{4d721ec56be54a08e4e2503c2669e50a}
+      \strng{authornamehash}{4d721ec56be54a08e4e2503c2669e50a}
+      \strng{authorfullhash}{4d721ec56be54a08e4e2503c2669e50a}
+      \field{labelalpha}{GS18}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Ein Intrusion-Detection- oder Intrusion-Pre­ven­tion-System ({IDS} / {IPS}) ist eine Security-Lösung, die ein Netzwerk oder eine Netz­werk­kom­po­nen­te wie einen Server oder einen Switch überwacht und versucht, Regel­ver­let­zung­en und schädliche Vorfälle wie Hacker-Angriffe zu erkennen und diese dann teilweise automatisch abzuwehren. Wir zeigen wie sich {IDS} und {IPS} unterscheiden und wer die wichtigsten Hersteller sind.}
+      \field{day}{14}
+      \field{langid}{german}
+      \field{month}{8}
+      \field{title}{Intrusion-Detection und -Prevention-Systeme}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/basti/Zotero/storage/YCPZ25DS/intrusion-detection-und-prevention-systeme-a-735825.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.security-insider.de/intrusion-detection-und-prevention-systeme-a-735825/
+      \endverb
+      \verb{url}
+      \verb https://www.security-insider.de/intrusion-detection-und-prevention-systeme-a-735825/
+      \endverb
+    \endentry
+    \entry{kurose_computernetzwerke:_2014}{book}{}
+      \name{author}{2}{}{%
+        {{hash=eaa988056a027bb9eebaf02515594f87}{%
+           family={Kurose},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b5ebc55d7c1b670ae670eb965c824b69}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Keith\bibnamedelima W.},
+           giveni={K\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Hallbergmoos}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{8b15a4387b0307c036b07ba93a736932}
+      \strng{fullhash}{8b15a4387b0307c036b07ba93a736932}
+      \strng{bibnamehash}{8b15a4387b0307c036b07ba93a736932}
+      \strng{authorbibnamehash}{8b15a4387b0307c036b07ba93a736932}
+      \strng{authornamehash}{8b15a4387b0307c036b07ba93a736932}
+      \strng{authorfullhash}{8b15a4387b0307c036b07ba93a736932}
+      \field{labelalpha}{KR14}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{6., aktualisierte Auflage}
+      \field{isbn}{978-3-86894-237-8}
+      \field{note}{{OCLC}: 879515435}
+      \field{pagetotal}{894}
+      \field{series}{Informatik}
+      \field{shorttitle}{Computernetzwerke}
+      \field{title}{Computernetzwerke: der Top-Down-Ansatz}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb Table of Contents PDF:/home/basti/Zotero/storage/GX6SGQPJ/Kurose und Ross - 2014 - Computernetzwerke der Top-Down-Ansatz.pdf:application/pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

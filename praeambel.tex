@@ -1,0 +1,123 @@
+\documentclass[fontsize=12pt, a4paper, headinclude, twoside=false, parskip=half+, pagesize=auto, numbers=noenddot, plainheadsepline, open=right, toc=listof, toc=bibliography, chapteratlists=0pt]{scrreprt}
+
+% Allgemeines
+\usepackage{scrlayer-scrpage} % Kopf- und Fußzeilen
+\usepackage{amsmath,marvosym} % Mathesachen
+\usepackage[T1]{fontenc} % Ligaturen, richtige Umlaute im PDF
+\usepackage[utf8]{inputenc}% UTF8-Kodierung für Umlaute usw
+\usepackage{caption}
+\usepackage[Q=yes]{examplep}
+\usepackage[colorinlistoftodos, textwidth=\marginparwidth]{todonotes}
+\let\oldmissingfigure\missingfigure % save old command
+\renewcommand{\missingfigure}[1]{\oldmissingfigure[figwidth=\textwidth-2pt]{#1}}% renew \missingfigure command
+\usepackage{geometry}
+\geometry{
+	left = 30mm,
+	right = 30mm,
+	top = 20mm,
+}
+%\usepackage{showframe} %Zeigt Rahmen um alle Objekte an
+
+% Schriften
+\usepackage{setspace} % Zeilenabstand
+\onehalfspacing % 1,5 Zeilen
+\usepackage{lmodern}
+
+% Schriften-Größen
+\setkomafont{chapter}{\Huge\rmfamily} % Überschrift der Ebene
+\setkomafont{section}{\Large\rmfamily}
+\setkomafont{subsection}{\large\rmfamily}
+\setkomafont{subsubsection}{\small\rmfamily}
+\setkomafont{chapterentry}{\large\rmfamily} % Überschrift der Ebene in Inhaltsverzeichnis
+\setkomafont{descriptionlabel}{\bfseries\rmfamily} % für description Umgebungen
+\setkomafont{captionlabel}{\small\bfseries}
+\setkomafont{caption}{\small}
+
+% Sprache: Deutsch
+\usepackage[ngerman]{babel} % Silbentrennung
+
+% PDF
+\usepackage[ngerman, breaklinks=true]{hyperref}
+\usepackage[final]{microtype} % mikrotypographische Optimierungen
+\usepackage{url}
+\usepackage{pdflscape} % einzelne Seiten drehen können
+
+% Tabellen
+\usepackage{multirow} % Tabellen-Zellen über mehrere Zeilen
+\usepackage{multicol} % mehre Spalten auf eine Seite
+\usepackage{tabularx} % Für Tabellen mit vorgegeben Größen
+\usepackage{longtable} % Tabellen über mehrere Seiten
+\usepackage{array}
+\usepackage{float}
+\usepackage{booktabs}
+
+% Bibliographie / Quellenverzeichnis
+\usepackage{bibgerm} % Umlaute in BibTeX
+\usepackage[style=alphabetic]{biblatex} % Quellenverzeichnis und Zitate
+\addbibresource{bibliographie.bib}
+
+% Bilder
+\usepackage{graphicx} % Bilder
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} % bevorzuge pdf-Dateien
+\usepackage[all]{hypcap} % Beim Klicken auf Links zum Bild und nicht zu Caption gehen
+
+
+% Bildunterschrift
+\usepackage{caption}
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\setcapindent{0em} % kein Einrücken der Caption von Figures und Tabellen
+%\setcapwidth[c]{0.9\textwidth}
+\setlength{\abovecaptionskip}{0.2cm} % Abstand der zwischen Bild- und Bildunterschrift
+
+% Custom colors
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{purple}{rgb}{0.96,0.15,0.44}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.4,0.4,0.4}
+\definecolor{codeblue}{rgb}{0.16,0.32,0.75}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codeorange}{rgb}{1.0,0.49,0.0}
+
+% Quellcode
+\usepackage{listings} % für Formatierung in Quelltexten
+\usepackage{color}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegray},
+	keywordstyle=\color{purple},
+	emph={instr,import},
+	emphstyle={\color{codeorange}},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codeblue},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=10pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	otherkeywords={vec4},
+	morekeywords={vec4},
+	frame=single,
+	framerule=2pt,
+	rulecolor=\color{backcolour},
+}
+\lstset{style=mystyle,language=Python}
+
+% Eigene Befehle %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\image}[4][!h]{
+	\begin{figure}[#1]
+		\centering
+		\vspace{1ex}
+		\includegraphics[#3]{images/#2}
+		\caption[#4]{#4}\label{img.#2}      
+		\vspace{1ex}
+	\end{figure}
+}
