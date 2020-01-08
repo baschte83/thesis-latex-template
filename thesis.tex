@@ -5,7 +5,9 @@
 
 \begin{document} % hier beginnt der eigentliche Inhalt
 \pagenumbering{Roman} % große Römische Seitenummerierung
-\pagestyle{empty}
+\pagestyle{scrheadings}
+\chead{\headmark} % Kopfzeile, mittig
+\automark{chapter} % legt den Inhalt der Kopfzeile fest, hier: Den Titel des Kapitels
 \overfullrule=3pt
 
 % Titelseite ########################################################################################
@@ -91,7 +93,7 @@
 
 \chapter{Tabellen}
 
-\begin{table}
+\begin{table}[!hbt]
 	\begin{center}
 		\begin{tabular}{ l c }
 			\toprule
